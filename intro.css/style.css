@@ -1,0 +1,52 @@
+/* # se usa para id */
+#titulo  {
+    color: rgba(0, 21, 255,1);
+}
+/* . se usa para class y p es para especificar que se trata de un parrafo*/
+p.texto {
+    color: rgb(47, 255, 0);
+}
+
+p.especial {
+    color: rgb(255, 140, 0);
+}
+/* se especifica que se va a modificar el color de un p que se encuentra dentro de un div */
+div p {
+    color: rgb(255, 0, 170);
+}
+/* con , se pueden agregar varios elementos */
+div h2, div h3 {
+    color: rgb(204, 47, 47);
+}
+/* * se utiliza para modificar elementos de todo el proyecto unicamente si no han sido definidos antes */
+* {
+    font-size: 24px;
+}
+/*
+.color {
+    color: #ff0000;
+}
+
+.color {
+    color: #000;
+}
+*/
+
+.color {
+    /* border: 5px black inset; */
+    border-style: solid;
+    border-color: blue;
+    border-radius: 10px;
+    border-width: 4px;
+}
+
+#fondo {
+    background-color: rgba(0, 174, 255, 0);
+    /* opacity: 0.5; */
+    height: 400px;
+    background-image: url('img/windows-11-amoled.jpg');
+    background-size: 100px 100px;
+    /* background-repeat: repeat-y;
+    background-position: center bottom; */
+    background: #f00 url('img/windows-11-amoled.jpg') repeat-y center bottom;
+}
