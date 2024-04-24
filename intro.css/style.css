@@ -45,8 +45,47 @@ div h2, div h3 {
     /* opacity: 0.5; */
     height: 400px;
     background-image: url('img/windows-11-amoled.jpg');
-    background-size: 100px 100px;
+    
     /* background-repeat: repeat-y;
     background-position: center bottom; */
-    background: #f00 url('img/windows-11-amoled.jpg') repeat-y center bottom;
+    background: #f00 url('img/windows-11-amoled.jpg') repeat-y center bottom / 100px 100px;
+}
+
+.margen {
+    background-color: steelblue;
+    margin: 15px;
+    padding: 30px 15px 5px;
+    border: solid black;
+    height: 100px;  /* Esta propiedad solo modifica el contenido (texto), no modifica el margin y el padding */
+    width: 50px;  /* Esta propiedad solo modifica el contenido (texto), no modifica el margin y el padding */
+    overflow: scroll;
+    outline: 2px solid red;
+}
+
+.text {
+    font-family: 'Jersey 15', sans-serif;
+    text-align: center;
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px blue;
+}
+
+a:link{
+    color: blueviolet;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover{
+    color: yellow;
+}
+
+a:active{
+    color: red;
+}
+
+ul {
+    background-color: crimson;
+    list-style-type: circle;
 }
