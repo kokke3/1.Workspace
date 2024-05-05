@@ -1,106 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mi primera web</title>
-    <style>
-        table, th, td {
-            border: 1px solid green;
-        }
-    </style>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table style="width: 400px;" >
-        <!--th centrados; td a la izquierda;-->
-        <thead>
-            <tr>
-                <th>Producto</th>
-                <th>Precio</th>
-            </tr>
-        </thead>
-        
-        <tbody>
-            <tr>
-                <td>Cerveza</td>
-                <td>Gratis</td>
-            </tr>
-            <tr>
-                <td>Coca</td>
-                <td>$18</td>
-            </tr>
-            <tr>
-                <td>Carton de caguamas</td>
-                <td>$100000</td>
-            </tr>
-        </tbody>
-
-        <tfoot>
-            <td></td>
-            <td>Total: $10000</td>
-        </tfoot>
-
-    </table>
-
-
-
-
-    <ul> <!--ul ees lista no ordenada-->
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-    </ul>
-    <ol> <!--ul ees lista ordenada-->
-        <li value="22" >Elemento 1</li>
-        <li>Elemento 2</li>
-        <ol style="list-style-type:lower-greek ;" >
-            <li>Subelemento 1</li>
-            <li>Subelemento 2</li>
-        </ol>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-    </ol>
-
-
-
-
-    <form action="formulario" method="post" >
-        <label for="nombre" >Nombre</label>
-        <input value="Jorge" id="nombre" type="text" name="nombre" placeholder="Escriba Nombre" />
-        <br><br>
-        <label for="apellido" >Apellido</label>
-        <input value="Mino" id="apellido" type="text" name="apellido" placeholder="Escriba Apellido" />
-        <br><br>
-        <label for="comentario">Comentario</label><br>
-        <textarea id="comentario" name="comentario" placeholder="Ingrese comentario" rows="10" cols="50" >Valor por defecto</textarea> <!--Tambien se puede usar style="height: 200px; width: 300px;" -->
-        <br>
-        <button type="button" ><img src="img/windows-11-dark.jpg" height="50"><br>Boton</button>
-        <button type="reset" >Reset</button>
-        <button type="submit" >Sumit</button>
-    </form>
-    <h1>Mi primer heading</h1>
-    <h2>Mi segundo heading</h2>
-    <h3>Mi tercer heading</h3>
-    <h4>Mi cuarto heading</h4>
-    <h5>Mi quinto heading</h5>
-    <H6>Mi sexto heading</H6>
-    <p>Mi primer parrafo</p>
-    <hr>
-    <h2>Sepacion de titulo</h2>
-    <p>
-        Mito de la fotografía siglo xx: era asociada con los fantasmas.
-        Uno de los datos curiosos de la fotografía, se da en <span style="color:darkorange">Pekín, China,</span> 
-        pues se pensaba que la fotografía se llevaba el alma de las personas
-        <br>
-        <br>
-        Existen diferentes curiosidades de Google, pero hay una, que quizás no sabías, 
-        y es que hay una app de Google Mirror, la cual es el efecto espejo de la web, 
-        lo puedes buscar en el navegador como “Google Mirror”, y toda la interfaz está invertida, 
-        hasta el propio logotipo de la empresa.
-    </p> 
-    <!--Este es un comentario invisible-->
-    <a  target="_blank" href="https://www.google.com">Google</a>
-    <br>
-    <br>   
-    <img src="img/windows-11-dark.jpg" width="500" /> <!--usar width o height para cmabiar el tamaño-->
+    <header id="titulo">
+        <h1>Blog de Maya</h1>
+    </header>
+    <section class="container">
+        <article class="post" >
+            <h2>Titulo de mi post</h2>
+            <p>Descripcion de mi post</p>
+            <img src="img/windows-11-dark.jpg" width="800" />
+            <p>Texto del articulo y es texto de prueba</p>
+        </article>
+        <article  class="post">
+            <h2>Titulo de mi post 2</h2>
+            <p>Descripcion de mi post 2</p>
+            <img src="img/windows-11-default.jpg" width="800" />
+            <p>Texto del articulo y es texto de prueba 2</p>
+        </article>
+        <article  class="post">
+            <h2>Titulo de mi post 3</h2>
+            <p>Descripcion de mi post 3</p>
+            <img src="img/windows-11-amoled.jpg" width="800" />
+            <p>Texto del articulo y es texto de prueba 3</p>
+        </article>      
+    </section>
+    <footer>
+        <section>
+            <a href="#titulo">Ir arriba</a>  <!--aqui se hace referencia al id titulo-->
+            <a href="mailto:nicolas@gmail.com" >nicolas@gmail.com</a>
+        </section>
+        <p>Copyright 2021</p>
+    </footer>
 </body>
 </html>

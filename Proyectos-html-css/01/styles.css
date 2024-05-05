@@ -1,0 +1,116 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(9,20,202);
+    background: linear-gradient(58deg, rgba(9,20,202,1) 0%, rgba(107,15,230,1) 100%);
+}
+
+.container {
+    height: 500px;
+    min-width: 500px;
+    color: white;
+}
+
+.hundred {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.one {
+    height: 80%;
+    width: 10%;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    left: 6%;
+    z-index: 2;
+    filter: drop-shadow(1px 1px 9px #00002f);    
+}
+
+.onedetail {
+    position: absolute;
+    height: 30%;
+    width: 8%;
+    background-color: white;
+    border-radius: 5px;
+    transform: rotate(50deg);
+    left: 5%;
+    top: 10%;
+}
+
+.zero0 {
+    height: 80%;
+    width: 40%;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: -3px;
+    z-index: 1;
+    filter: drop-shadow(1px 1px 9px #00002f);
+}
+
+.zero0::after {
+    content: "";
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    background: rgb(9,20,202);
+    background: linear-gradient(58deg, rgba(9,20,202,1) 0%, rgba(107,15,230,1) 100%);
+    position: absolute;
+    z-index: 1;
+}
+
+.zero1 {
+    height: 80%;
+    width: 40%;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -3%;
+    filter: drop-shadow(1px 1px 9px #00002f);
+}
+
+.zero1::after {
+    content: "";
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    background: rgb(9,20,202);
+    background: linear-gradient(58deg, rgba(9,20,202,1) 0%, rgba(107,15,230,1) 100%);
+    position: absolute;
+    z-index: 1;
+}
+
+.text {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text h1 {
+    font-size: 10rem;
+    line-height: 70%;
+}
+
+.text p {
+    font-size: 3rem;
+    font-weight: bold;
+}
